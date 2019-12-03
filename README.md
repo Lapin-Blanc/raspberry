@@ -46,7 +46,7 @@ Copier et coller les cinq lignes suivantes dans un terminal :
 ```
 cd
 sudo apt-get install git
-clone https://github.com/Lapin-Blanc/raspberry.git
+git clone https://github.com/Lapin-Blanc/raspberry.git
 cd raspberry/
 ./install_jupyter.sh
 ```
