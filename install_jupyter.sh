@@ -10,6 +10,9 @@ sudo apt-get -y upgrade
 # Installe le gestionnaire de modules python
 sudo apt-get -y install python3-pip
 
+# Installe la bibliothèque GPIO
+sudo pip3 install RPi.GPIO
+
 # Installe le serveur Jupyter Lab
 sudo pip3 install jupyterlab
 
