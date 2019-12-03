@@ -1,0 +1,20 @@
+# create or copy in /etc/systemd/system/jupyter.service
+# start with systemctl start jupyter
+# enable with systemctl enable jupyter
+
+[Unit]
+Description=Jupyter Notebook
+
+[Service]
+Type=simple
+PIDFile=/run/jupyter.pid
+ExecStart=/usr/local/bin/jupyter-lab --config=/home/pi/.jupyter/jupyter_notebook_config.py
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/Notebooks/
+Restart=always
+RestartSec=10
+#KillMode=mixed
+
+[Install]
+WantedBy=multi-user.target
