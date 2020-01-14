@@ -45,7 +45,7 @@ Activer définitivement le serveur avec `systemctl enable jupyter`
 Copier et coller les cinq lignes suivantes dans un terminal :
 ```
 cd
-sudo apt-get install git
+sudo apt-get install -y git
 git clone https://github.com/Lapin-Blanc/raspberry.git
 cd raspberry/
 ./install_jupyter.sh
